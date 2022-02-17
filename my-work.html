@@ -3,22 +3,17 @@
 <html>
 
 <head>
-
     <title>Alex Edwards - My Work</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="assets/css/background.css">
-
     <link rel="stylesheet" type="text/css" href="assets/css/my-work.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
 </head>
 
 <body>
 
-    <div class="area" >
+    <div class="area">
 
         <ul class="circles">
 
@@ -48,16 +43,40 @@
 
 
 
-    <div align="center" class="context">
+    <div class="context">
 
         <h1>My Work</h1>
+        <a href="index.html">
+            <h6 class="text-center text-white return-home">Return home</h6>
+        </a>
+        
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center" style="padding-top: 1vh">
+                <div class="col">
+                    <div class="card border-light mb-3 bg-transparent text-white">
+                        <img src="assets/img/work/siliconrepairs.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Silicon Repairs</h5>
+                            <button class="btn-white" type="button" onclick="window.open('https://siliconrepairs.co.uk', '_blank' ).focus();">Visit</button>
+                            <!-- <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;">About</button> -->
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row" style="padding-top: 1vh">
+                <div class="col">
+                    <div class="card border-light mb-3 bg-transparent text-white">
+                        <img src="assets/img/work/yourpizza.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Your Pizza</h5>
+                            <button class="btn-white" type="button" onclick="window.open('https://yp.alexwjedwards.co.uk', '_blank' ).focus();">Visit</button>
+                            
+                        </div>
+                    </div>
+                </div>
 
-            <a class="my-work-link" target="_blank" href="https://siliconrepairs.co.uk">Silicon Repairs</a>
+            </div>
 
-            <a class="my-work-link" target="_blank" href="https://yp.alexwjedwards.co.uk">Your Pizza</a>
-
+            
         </div>
 
     </div>

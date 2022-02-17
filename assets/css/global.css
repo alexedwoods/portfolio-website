@@ -1,0 +1,53 @@
+* {
+    font-family: 'Exo', sans-serif;
+}
+
+.btn-white {
+    background-color: transparent;
+    color: white;
+    
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+
+    padding-top: 1.25vh;
+    padding-bottom: 1.25vh;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: #520252;
+
+    font-weight: bolder;
+
+    border-radius: 25px 15px ;
+    transition: 0.2s;
+}
+
+.btn-white-alt {
+    background-color: transparent;
+    color: white;
+    
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+
+    padding-top: 1.25vh;
+    padding-bottom: 1.25vh;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.btn-white-alt:hover {
+    background-color: white;
+    color: #520252;
+
+    font-weight: bolder;
+
+    border-radius: 15px 25px ;
+    transition: 0.2s;
+}
