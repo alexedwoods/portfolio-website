@@ -1,0 +1,22 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: cloud856.thundercloud.uk
+        username: github-dev-deploy@alexwjedwards.co.uk
+        password: ${{ secrets.password }}
