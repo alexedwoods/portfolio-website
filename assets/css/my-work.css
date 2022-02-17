@@ -1,0 +1,38 @@
+html, a {
+    font-family: 'Exo', sans-serif;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+    font: 1.4em !important;
+    transition: 0.4s;
+}
+
+a:hover{
+    font-size: 1.2rem;
+}
+
+.my-work-link {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:5vh;
+    padding: 0px !important;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.row {
+    margin-top: 5%;
+}

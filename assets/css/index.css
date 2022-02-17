@@ -1,0 +1,42 @@
+html {
+
+    font-family: 'Exo', sans-serif;
+
+}
+
+
+
+.context {
+
+    width: 100%;
+
+    position: absolute;
+
+    top:50vh;
+
+    margin-top: -2.5%;
+
+    padding: 0px !important;
+
+}
+
+
+
+.context h1{
+
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 80px;
+
+    margin: 0px !important;
+
+    padding: 0px !important;
+
+}
+
+i:hover {
+    color: purple;
+    transition: 0.2s;
+}
