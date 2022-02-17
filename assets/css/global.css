@@ -23,7 +23,6 @@
 
     font-weight: bolder;
 
-    border-radius: 25px 15px ;
     transition: 0.2s;
 }
 
@@ -48,6 +47,29 @@
 
     font-weight: bolder;
 
-    border-radius: 15px 25px ;
+    transition: 0.2s;
+}
+
+.btn-modal {
+    background-color: white;
+    color: #520252;
+
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+
+    padding-top: 1.25vh;
+    padding-bottom: 1.25vh;
+
+    font-weight: bold;
+
+    border-color: #520252;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.btn-modal:hover {
+    background-color: #520252;
+    color: white;
+
     transition: 0.2s;
 }

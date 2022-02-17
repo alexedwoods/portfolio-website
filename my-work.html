@@ -44,7 +44,6 @@
 
 
     <div class="context">
-
         <h1>My Work</h1>
         <a href="index.html">
             <h6 class="text-center text-white return-home">Return home</h6>
@@ -58,7 +57,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Silicon Repairs</h5>
                             <button class="btn-white" type="button" onclick="window.open('https://siliconrepairs.co.uk', '_blank' ).focus();">Visit</button>
-                            <!-- <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;">About</button> -->
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#siliconRepairsModal">About</button>
                         </div>
                     </div>
                 </div>
@@ -69,19 +68,60 @@
                         <div class="card-body">
                             <h5 class="card-title">Your Pizza</h5>
                             <button class="btn-white" type="button" onclick="window.open('https://yp.alexwjedwards.co.uk', '_blank' ).focus();">Visit</button>
-                            
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#yourPizzaModal">About</button>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-            
         </div>
-
     </div>
 
+    
+    <div class="modal fade" id="siliconRepairsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A little info about Silicon Repairs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>What is Silicon Repairs?</h3>
+                    <p>Silicon Repairs is an electronics repair business started by me to improve my skills not only with hardware but also with software. It has since grown into a mode of putting my development skills to the test in a business environment.</p>
+                    <h3>What have you developed for Silicon Repairs?</h3>
+                    <p>I have not only developed a bespoke website but also a backend to support this website where repairs can be managed.</p>
+                    <h3>How often do you work on Silicon Repairs?</h3>
+                    <p>I tend to work on Silicon Repairs whenever I have free time (usually in the evenings) most of my time is spent fixing devices & interacting with customers. </p>
+                    <h3>What would you improve about the website?</h3>
+                    <p>I'm currently in the process of overhauling the website to make the site look more modern and facilitate new features such as refresh-less tracking and code clean ups.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="yourPizzaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A little info about Your Pizza</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>What is Your Pizza?</h3>
+                    <p>The Your Pizza website is the result of a college competition hosted in 2021, the goal was to create to "Create some code in Python, HTML, Javascript etc to solve a specific problem of your choice." A copy of <a href="assets/pdf/yp-project-brief.pdf" target="_blank">the project brief</a>.</p>
+                    <h3>What technologies does the Your Pizza website use?</h3>
+                    <p>The Your Pizza website utilises HTML, CSS and PHP </p>
+                    <h3>What would you improve about the website?</h3>
+                    <p>I would change the styling and implement a cart that can be viewed from anywhere in the process instead of just at the end as it is now.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

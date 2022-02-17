@@ -1,13 +1,10 @@
 a {
-    color: white !important;
+    color: white;
     text-decoration: none !important;
     font: 1.4em !important;
     transition: 0.4s;
 }
 
-a:hover{
-    font-size: 1.2rem;
-}
 
 .my-work-link {
     padding-top: 1vh;
