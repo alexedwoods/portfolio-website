@@ -17,6 +17,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: cloud856.thundercloud.uk
-        username: github-dev-deploy@alexwjedwards.co.uk
+        server: ${{ secrets.host }}
+        username: ${{ secrets.user }}
         password: ${{ secrets.password }}
