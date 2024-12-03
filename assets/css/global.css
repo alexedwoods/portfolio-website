@@ -5,12 +5,8 @@
 .btn-white {
     background-color: transparent;
     color: white;
-    
-    padding-left: 1.25vw;
-    padding-right: 1.25vw;
 
-    padding-top: 1.25vh;
-    padding-bottom: 1.25vh;
+    padding: 1.25vh 1.25vw;
 
     border-color: white;
     border-style: solid;
@@ -20,21 +16,15 @@
 .btn-white:hover {
     background-color: white;
     color: #520252;
-
     font-weight: bolder;
-
     transition: 0.2s;
 }
 
 .btn-white-alt {
     background-color: transparent;
     color: white;
-    
-    padding-left: 1.25vw;
-    padding-right: 1.25vw;
 
-    padding-top: 1.25vh;
-    padding-bottom: 1.25vh;
+    padding: 1.25vh 1.25vw;
 
     border-color: white;
     border-style: solid;
@@ -54,14 +44,9 @@
     background-color: white;
     color: #520252;
 
-    padding-left: 1.25vw;
-    padding-right: 1.25vw;
-
-    padding-top: 1.25vh;
-    padding-bottom: 1.25vh;
+    padding: 1.25vh 1.25vw;
 
     font-weight: bold;
-
     border-color: #520252;
     border-style: solid;
     border-radius: 15px;
@@ -70,6 +55,5 @@
 .btn-modal:hover {
     background-color: #520252;
     color: white;
-
     transition: 0.2s;
 }

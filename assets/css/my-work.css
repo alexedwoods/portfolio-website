@@ -34,3 +34,13 @@ a {
     font-weight: bold;
     transition: 0.2s;
 }
+
+.card-img-top {
+    width: 100%;
+    object-fit: contain;
+    min-height: 200px;
+}
+
+.card {
+    padding: 5px;
+}

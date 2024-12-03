@@ -3,34 +3,41 @@ a {
 }
 
 .context {
-
     width: 100%;
-
     position: absolute;
-
     top: 40%;
-
     padding: 0px !important;
-
 }
 
-
-
 .context h1{
-
     text-align: center;
-
     color: #fff;
-
     font-size: 80px;
-
     margin: 0px !important;
-
     padding: 0px !important;
-
 }
 
 i:hover {
     color: purple;
     transition: 0.2s;
+}
+
+.fa-php {
+
+}
+
+.fa-html5 {
+
+}
+
+.fa-css3-alt {
+
+}
+
+.fa-js-square {
+
+}
+
+.fa-microsoft {
+
 }

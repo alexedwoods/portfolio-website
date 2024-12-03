@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 
 .area {
     background: #520252;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:100vh;
-    margin: 0px !important;
-    padding: 0px !important;
+    height: 200vh;
 }
 
 .circles{
@@ -18,7 +15,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     overflow: hidden;
     margin: 0px !important;
     padding: 0px !important;
@@ -31,7 +28,7 @@ body {
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
+    animation: animate 30s linear infinite;
     bottom: -150px;
     margin: 0px !important;
     padding: 0px !important;
@@ -46,7 +43,6 @@ body {
     margin: 0px !important;
     padding: 0px !important;
 }
-
 
 .circles li:nth-child(2){
     left: 10%;
@@ -134,10 +130,7 @@ body {
     padding: 0px !important;
 }
 
-
-
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -149,5 +142,4 @@ body {
         opacity: 0;
         border-radius: 50%;
     }
-
 }

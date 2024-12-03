@@ -9,39 +9,25 @@
     <link rel="stylesheet" type="text/css" href="assets/css/background.css">
     <link rel="stylesheet" type="text/css" href="assets/css/my-work.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
 
     <div class="area">
-
         <ul class="circles">
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
             <li></li>
-
         </ul>
-
     </div>
-
-
 
     <div class="context">
         <h1>My Work</h1>
@@ -50,15 +36,39 @@
         </a>
         
         <div class="container text-center">
-            <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center" style="padding-top: 1vh">
+            <div class="row row-cols-1 row-cols-md-4 g-4 align-items-center" style="padding-top: 1vh">
+                <div class="col">
+                    <div class="card border-light mb-3 bg-transparent text-white">
+                        <img src="assets/img/work/sustain-wiltshire.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Sustain Wiltshire</h5>
+                            <h6>2022-ongoing</h6>
+                            <button class="btn-white" type="button" onclick="window.open('https://sustainwiltshire.co.uk', '_blank' ).focus();">Visit</button>
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#sustainWiltshireModal">More info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-light mb-3 bg-transparent text-white">
+                        <img src="https://www.crapperandsons.co.uk/content/uploads/crapper-and-sond-landfill-ltd-logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Crapper & Sons</h5>
+                            <h6>2022-ongoing</h6>
+                            <button class="btn-white" type="button" onclick="window.open('https://sustainwiltshire.co.uk', '_blank' ).focus();">Visit</button>
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#crapperAndSonsModal">More info</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col">
                     <div class="card border-light mb-3 bg-transparent text-white">
                         <img src="assets/img/work/siliconrepairs.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Silicon Repairs</h5>
-                            <h6>2019-ongoing</h6>
+                            <h5 class="card-title fw-bolder">Silicon Repairs</h5>
+                            <h6>2019-2023</h6>
                             <button class="btn-white" type="button" onclick="window.open('https://siliconrepairs.co.uk', '_blank' ).focus();">Visit</button>
-                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#siliconRepairsModal">About</button>
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#siliconRepairsModal">More info</button>
                         </div>
                     </div>
                 </div>
@@ -67,10 +77,9 @@
                     <div class="card border-light mb-3 bg-transparent text-white">
                         <img src="assets/img/work/yourpizza.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Your Pizza</h5>
+                            <h5 class="card-title fw-bolder">Your Pizza</h5>
                             <h6>2021</h6>
-                            <button class="btn-white" type="button" onclick="window.open('https://yp.alexwjedwards.co.uk', '_blank' ).focus();">Visit</button>
-                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#yourPizzaModal">About</button>
+                            <button class="btn-white-alt" type="button" style="margin-left: 0.2vw;" data-bs-toggle="modal" data-bs-target="#yourPizzaModal">More info</button>
                         </div>
                     </div>
                 </div>
@@ -78,6 +87,48 @@
         </div>
     </div>
 
+    <div class="modal fade" id="crapperAndSonsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crapper & Sons</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>What have you created for Crapper & Sons?</h3>
+                    <p>
+                        <ul>
+                            <li>Inventory System built with Laravel</li>
+                            <li>Ticket Management System built with Laravel with a custom connector to a SharePoint site</li>
+                        </ul>
+                    </p>
+                    <h3>What else do you do for Crapper & Sons?</h3>
+                    <p>I regularly do other tasks for Crapper & Sons not related to the development and rollout of new software which includes maintaining their fleet of existing WordPress sites, rolling out new hardware for end users, and supporting other projects where IT expertise is required.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sustainWiltshireModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A little info about Sustain Wiltshire</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>What have you developed for Sustain Wiltshire?</h3>
+                    <p>The Sustain Wiltshire project has been an expansive project for me starting in October 2022 and ongoing to this day, the client has gone from a simple PHP website to a fully fledged Laravel eCommerce website. The eCommerce site hooks into a Laravel inventory management system also built by me. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="modal fade" id="siliconRepairsModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
