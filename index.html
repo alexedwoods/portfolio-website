@@ -42,13 +42,9 @@
                 <i class="fab fa-js-square animated-icon visually-hidden"></i>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <a href="my-work.html">
-                    <button class="btn-white visually-hidden" id="myWorkButton">My Work</button>
-                </a>
-            </div>
-        </div>
+        <a href="my-work.html">
+            <button class="btn-white visually-hidden" id="myWorkButton">My Work</button>
+        </a>
   	</div>
 
 
@@ -59,6 +55,20 @@
     const elements = document.querySelectorAll('.animated-icon');
 
     async function animateSequentially() {
+        const workButton = document.getElementById('myWorkButton');
+        const contactButton = document.getElementById('contactButton');
+        if (Cookies.get('pageLoaded') !== undefined) {
+            for (let element of elements) {
+                element.classList.remove('visually-hidden');
+            }
+            workButton.classList.remove('visually-hidden');
+            contactButton.classList.remove('visually-hidden');
+            return Promise.resolve();
+        }
+
+        // Set a cookie to show the page has been loaded before
+        Cookies.set('pageLoaded', 'true')
+
         for (let element of elements) {
             // Wait for page animations to complete
             await new Promise(resolve => setTimeout(resolve, 600));
@@ -75,10 +85,14 @@
             await new Promise(resolve => setTimeout(resolve, 200));
         }
 
-        const workButton = document.getElementById('myWorkButton');
         workButton.classList.remove('visually-hidden');
         workButton.classList.add('animate__animated', 'animate__bounceIn');
         workButton.style.setProperty('--animate-duration', '0.5s');
+
+
+        contactButton.classList.remove('visually-hidden');
+        contactButton.classList.add('animate__animated', 'animate__bounceIn');
+        contactButton.style.setProperty('--animate-duration', '0.5s');
     }
 
     // Start the animation sequence when page loads
